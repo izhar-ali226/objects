@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      form {
+        text-align: center;
+      }
+    </style>
+    <script src="/objPra.js"></script>
+  </head>
+  <body>
+    <!-- <form onsubmit="return search()">
+      <p>Search</p>
+      <input type="text" id="searchInput" />
+      <input type="submit" />
+      <h3 id="h3"></h3>
+    </form> -->
+
+    <form method="/" onsubmit="return submitted()">
+      <label for="name">Name</label><br />
+      <input type="text" id="name" /><br /><br />
+
+      <label for="gender">Gender:</label>
+      <input type="radio" name="same" id="male" value="mail" />Mail
+      <input type="radio" name="same" id="female" value="femail" />Femail
+      <br /><br />
+
+      <label for="address">Address</label><br />
+      <input type="text" name="address" id="address" /><br /><br />
+
+      <h3>Education</h3>
+      <select name="education" id="education">
+        <option value="BiologicalAndBiomedicalSciences">
+          Biological and Biomedical Sciences
+        </option>
+        <option value="Business">Business</option>
+        <option value="LiberalArtsAndHumanities">
+          Liberal Arts and Humanities
+        </option>
+      </select>
+      <br /><br />
+      <h3>Profession</h3>
+      <select name="profession" id="profession">
+        <option value="SoftwareDeveloper">Software Developer</option>
+        <option value="Technology specialist">Technology specialist</option>
+        <option value="Scientist">Scientist</option></select
+      ><br /><br />
+
+      <input type="submit" value="submit" />
+    </form>
+  </body>
+</html>
